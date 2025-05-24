@@ -1,0 +1,191 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer {
+    background: linear-gradient(145deg, #0b2545, #163a75);
+    border-radius: 20px;
+    padding: 30px 40px;
+    width: 320px;
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.5),
+        inset 0 0 20px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.loginContainer input[type="text"],
+.loginContainer input[type="password"] {
+    width: 90%;
+    padding: 12px 15px;
+    margin: 15px 0 25px;
+    border-radius: 12px;
+    border: 2px solid #f71c1c;
+    background-color: #1c2a4a;
+    color: #f0f0f5;
+    font-size: 18px;
+    transition: border-color 0.3s ease;
+}
+
+.loginContainer input[type="text"]:focus,
+.loginContainer input[type="password"]:focus {
+    border-color: #ff5f5f;
+    outline: none;
+}
+
+.btn1 {
+    background: #f71c1c;
+    color: #fff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    box-shadow:
+        0 5px 20px rgba(247, 28, 28, 0.6);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn1:hover {
+    background: #ff4949;
+    box-shadow: 0 8px 30px rgba(255, 73, 73, 0.8);
+}
+
+.input1 {
+    display: none;
+    margin-top: 30px;
+    width: 320px;
+    text-align: center;
+}
+
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    width: 70%;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: 2px solid #e9b600;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #ffcb2b;
+}
+
+.search button {
+    padding: 12px 25px;
+    background-color: #e9b600;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    color: #222;
+    box-shadow: 0 4px 15px rgba(233, 182, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #ffdb4d;
+}
+
+
+.ironman {
+    display: none;
+    background: linear-gradient(145deg, #0f1d36, #1e2c58);
+    max-width: 360px;
+    margin: 30px auto;
+    border-radius: 25px;
+    padding: 30px 25px;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.8),
+        inset 0 0 50px #ffbd39;
+    color: #ffeaa7;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: 'Bangers', cursive, sans-serif;
+    font-size: 3rem;
+    color: #ffd93b;
+    text-shadow:
+        3px 3px 0 #d2a900,
+        6px 6px 10px rgba(255, 189, 57, 0.5);
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+
+.iron {
+    width: 220px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+    box-shadow: 0 10px 30px #ffcb2b;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+
+h3 {
+    font-style: italic;
+    color: #ffd966;
+    font-size: 1.2rem;
+    margin: 0 0 15px;
+}
+
+
+h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #ffc107;
+    margin: 0 0 25px;
+}
+
+
+.power {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #ffdd44;
+    text-shadow: 2px 2px 5px #b07b00;
+    user-select: none;
+}
+
+
+@media (max-width: 400px) {
+
+    .loginContainer,
+    .input1,
+    .ironman {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .iron img {
+        width: 150px;
+    }
+}
